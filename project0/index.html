@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+    <!-- ICON -->
+    <link rel="icon" href="static/pics/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        .hero {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(static/pics/mandarin.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            filter: brightness(60%);
+        }
+
+        .hero-content {
+            position: relative;
+            font-family: "Monserrat", sans-serif;
+            color: white;
+            text-align: center;
+            margin: 0.625rem;
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 0;
+        }
+
+        .hero-subtitle {
+            font-size: 2rem;
+            font-weight: 200;
+            margin-top: 1rem;
+        }
+
+        .hero-button {
+            background-color: #ae2d59;
+            color: white;
+            border: 1px solid #cb376a;
+            margin-top: 5rem;
+            padding: 0.9375rem1.875rem;
+            font-family: "Monserrat", sans-serif;
+            font-size: 1.125rem;
+            font-weight: 200;
+            cursor: pointer;
+        }
+
+        .hero-button:hover {
+            background-color: darkgreen;
+            border: 1px solid black;
+        }
+
+        /* Resources serction */
+
+        .featured-resources {
+            padding: 30px;
+        }
+
+        .resource {
+            background-color: yellow;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            text-align: left;
+
+        }
+
+        .resource-image {
+            margin-right: 20px;
+        }
+
+        .resource-image img {
+            width: 50px;
+            height: 50px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+
+            @media screen and (min-width: 600px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+        }
+
+        .btn-primary {
+            background-color: #1DB954;
+            border-color: #1DB954;
+        }
+
+
+        /* video */
+
+        .videos {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .videos h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .videos .video-container {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .videos h2 {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .videos p {
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .videos a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .videos a:hover {
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsive Layout */
+        @media (max-width: 768px) {
+            .videos .video-container {
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <script id="replace_with_navbar" src="nav.js"></script>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1 class="hero-title">
+                Aprende Chino Mandarín Ahora
+            </h1>
+
+            <h2 class="hero-subtitle">
+                Encuentra los mejores recursos en linea
+            </h2>
+            <a href="#recursos" class="hero-button"> <button type="button" class="hero-button">
+                    Aprende más &raquo;
+                </button></a>
+
+
+        </div>
+
+    </section>
+
+
+
+    <main>
+        <h1>Aprende Chino Mandarin con los mejores recursos en linea</h1>
+
+        <p>En este sitio encontraras los mejores recursos en línea gratuitos para poder comenza en tu camino de
+            aprendizaje de este maravilloso idioma.</p>
+        <br><br>
+        <h2>¿Por Qué Aprender Chino Mandarín?</h2>
+        <br>
+
+        <div class="video-container">
+            <div class="iframe-container">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/_NBr72FmaRc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+    </main>
+
+    <!-- Resources section -->
+    <section class="featured-resources">
+        <a id="recursos">
+            <h2 style="margin-bottom: 20px; font-weight: bold">Recursos</h2>
+        </a>
+        <div class="resource">
+            <div class="resource-image">
+                <img src="static/pics/website.png" alt="Website Icon">
+            </div>
+            <div class="resource-details">
+                <h3>Descubre Sitios Web Esenciales para Aprender Chino</h3>
+                <p>Explora los sitios web líderes que ofrecen frases, lecciones gramaticales, diccionarios interactivos
+                    y más, optimizando tu proceso de aprendizaje de manera excepcional!</p>
+                <a href="./websites.html" class="btn btn-danger">Conocer más</a>
+            </div>
+        </div>
+
+        <div class="resource">
+            <div class="resource-image">
+                <img src="static/pics/app2.png" alt="Quiz Icon">
+            </div>
+            <div class="resource-details">
+                <h3>Apps</h3>
+                <p>Descubre las aplicaciones destacadas que complementarán tu aprendizaje con otros recursos. Estas apps
+                    te brindarán la oportunidad de adquirir amplio vocabulario, comprender la gramática y dominar frases
+                    de uso diario de manera efectiva. ¡Potencia tu aprendizaje con estas valiosas herramientas!</p>
+                <a href="./apps.html" class="btn btn-danger">Descubre Más</a>
+            </div>
+        </div>
+
+        <div class="resource">
+            <div class="resource-image">
+                <img src="/static/pics/video.png" alt="website Icon">
+            </div>
+            <div class="resource-details">
+                <h3>Video-Lecciones</h3>
+                <p>Explora nuestras clases en video de alta calidad, que abarcan desde la fonética china hasta lecciones
+                    avanzadas de gramática. Aprende de manera visual y práctica para dominar aspectos fundamentales del
+                    idioma</p>
+                <a href="./videos.html" class="btn btn-danger">Videos interactivos</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        Project 0 - Homepage - Jeffrey Silva 
+    </footer>
+    <!-- Add Bootstrap JavaScript link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

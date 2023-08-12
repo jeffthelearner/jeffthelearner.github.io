@@ -1,0 +1,114 @@
+body {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Serif SC', serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.text-center mt-4 {
+    padding-top: 30px;
+}
+
+.apps {
+    padding: 20px;
+    justify-content: center;
+}
+
+.app-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.app-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.app-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.app-description {
+    color: #666666;
+    font-family: 'Noto Serif SC', serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.app-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.app-link:hover {
+    text-decoration: underline;
+}
+
+.img-fluid {
+    width: 515px;
+    height: 515px;
+}
+
+/* download buttons */
+.app-link>.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.app-link>.btn:hover {
+    animation: rainbow 2s infinite linear;
+}
+
+@keyframes rainbow {
+    0% {
+        background-color: red;
+    }
+
+    14% {
+        background-color: orange;
+    }
+
+    28% {
+        background-color: yellow;
+    }
+
+    42% {
+        background-color: green;
+    }
+
+    57% {
+        background-color: blue;
+    }
+
+    71% {
+        background-color: indigo;
+    }
+
+    85% {
+        background-color: violet;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+.chinese-font {
+    font-family: 'Caveat', cursive;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Serif SC', serif;
+    font-family: 'Roboto', sans-serif;
+}
